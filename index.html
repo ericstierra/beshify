@@ -8,9 +8,12 @@
 </head>
 <body>
   <h1>✨ Start beshifying... ✨</h1>
-  <input type="text" id="inputText">
+  <input type="text" id="inputText" oninput="updateOutput()">
   <div id="output"></div>
-  <button id="copyButton">Copy</button>
+  <button id="copyButton" onclick="copyOutput()">Copy</button>
+  <div class="theme-switch">
+    <button class="toggle-button" onclick="toggleTheme()">Toggle Theme</button>
+  </div>
 
   <div class="footer">
     <p>Developed by: <a href="https://facebook.com/area51.erictierra">Eric Tierra</a></p>

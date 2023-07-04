@@ -1,5 +1,3 @@
-document.getElementById("inputText").addEventListener("input", updateOutput);
-
 function updateOutput() {
   var inputText = document.getElementById("inputText").value;
   var outputText = inputText.replace(/ /g, " 🤸");
@@ -11,8 +9,6 @@ function updateOutput() {
     document.getElementById("copyButton").style.display = "none";
   }
 }
-
-document.getElementById("copyButton").addEventListener("click", copyOutput);
 
 function copyOutput() {
   var outputText = document.getElementById("output").innerText;
@@ -29,3 +25,19 @@ function copyOutput() {
     alert("Failed to copy output text.");
   });
 }
+
+// Rest of the JavaScript code remains the same
+
+function toggleTheme() {
+  var body = document.body;
+  var toggleButton = document.querySelector('.toggle-button');
+  body.classList.toggle("dark-theme");
+  toggleButton.classList.toggle("dark");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  var prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var toggleButton = document.querySelector('.toggle-button');
+  toggleButton.classList.toggle("dark", prefersDarkTheme);
+});
+
