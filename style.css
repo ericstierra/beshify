@@ -1,54 +1,67 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#inputText {
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#output {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#copyButton {
+  display: none;
+}
+
+#copyButton.copied {
+  background-color: green;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer a {
+  color: blue;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
   h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 20px;
   }
-  
+
+  #inputText {
+    font-size: 14px;
+    width: 80%;
+    max-width: 300px; /* Set a maximum width to limit its size on larger screens */
+  }
+
   #output {
-    margin-top: 10px;
+    font-size: 16px;
   }
-  
-  #copyButton {
-    display: none;
-  }
-  
-  #copyButton.copied {
-    background-color: green;
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    font-size: 12px;
-  }
-  
-  .footer a {
-    color: blue;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Styles */
-  
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 20px;
-    }
-  
-    .footer {
-      font-size: 10px;
-    }
-  }
-  
+}
