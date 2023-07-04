@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>🤸 Beshify 🤸</title>
+  <title>✨ Start beshifying... ✨</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="st.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🤸 Start beshifying... 🤸</h1>
+  <h1>✨ Start beshifying... ✨</h1>
   <input type="text" id="inputText" oninput="updateOutput()">
   <div id="output"></div>
-  <button id="copyButton" onclick="copyOutput()">Copy</button>
-  <div class="theme-switch">
-    <button class="toggle-button" onclick="toggleTheme()">Toggle Theme</button>
+  <div class="output-row">
+    <span id="outputText"></span>
+    <button id="copyButton" onclick="copyOutput()">Copy</button>
   </div>
 
   <div class="footer">
     <p>Developed by: <a href="https://facebook.com/area51.erictierra">Eric Tierra</a></p>
+    <a href="https://info.flagcounter.com/CAyP"><img src="https://s11.flagcounter.com/count2/CAyP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
   </div>
 
   <script src="script.js"></script>

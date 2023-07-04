@@ -15,7 +15,7 @@ function copyOutput() {
   var copyButton = document.getElementById("copyButton");
 
   navigator.clipboard.writeText(outputText).then(function() {
-    copyButton.textContent = "Text Copied Successfully!";
+    copyButton.textContent = "Copied!";
     copyButton.classList.add("copied");
     setTimeout(function() {
       copyButton.textContent = "Copy";
